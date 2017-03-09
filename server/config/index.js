@@ -2,7 +2,7 @@
 
 import * as path from "path";
 
-export const config = {
+let config = {
 
     env: process.env.NODE_ENV,
 
@@ -24,7 +24,7 @@ export const config = {
     seedDB: true,
 
     secrets: {
-        session: 'autodice2-secret'
+        session: 'autodice-secret'
     },
 
     facebook: {
@@ -46,3 +46,5 @@ export const config = {
     },
 
 };
+
+export default config;

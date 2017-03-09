@@ -1,16 +1,42 @@
 'use strict';
 
-// Set default node environment to development
-let env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-
 // Get dependencies
 import * as express from "express";
 import * as path from "path";
 import * as http from "http";
 import * as bodyParser from "body-parser";
-import { config } from "./config";
 import * as mongoose from "mongoose";
 
+import config from "./config";
+import routes from "./routes";
+
+class App {
+	
+	public express: express.Application;
+	
+	constructor() {
+		
+		this.express = express();
+		this.middleware();
+
+	}
+	
+	private middleware(): void {
+		
+		this.express.use(bodyParser.json());
+		this.express.use(bodyParser.urlencoded({ extended: false }));
+
+		this.express.use(express.static(path.join(__dirname, '../client')));
+		
+	}
+
+	
+	
+}
+
+export default new App().express;
+
+/*
 // Connect to MongoDB
 mongoose.connect(config.mongo.uri, config.mongo.options);
 mongoose.connection.on('error', function(err) {
@@ -47,4 +73,4 @@ const server = http.createServer(app);
 server.listen(port, () => console.log(`API running on localhost:${port}`));
 
 // Expose app
-exports = module.exports = app;
+exports = module.exports = app;*/

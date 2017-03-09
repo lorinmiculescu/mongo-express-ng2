@@ -9,9 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev": "concurrently \"ng build -w\" \"nodemon dist/server/app.js --watch server -e ts --exec \\\"npm run server:start\\\"\"",
-    "server:start": "tsc && node dist/server/app.js",
-    "server:debug": "nodemon dist/server/app.js --watch server -e ts --exec \"tsc && node dist/server/app.js\""
+    "dev": "concurrently \"ng build -w\" \"nodemon dist/server --watch server -e ts --exec \\\"npm run server:start\\\"\"",
+    "server:start": "tsc && node dist/server",
+    "server:debug": "nodemon dist/server --watch server -e ts --exec \"tsc && node dist/server\""
   },
   "private": true,
   "dependencies": {
@@ -37,8 +37,12 @@
   "devDependencies": {
     "@angular/cli": "1.0.0-beta.31",
     "@angular/compiler-cli": "^2.4.0",
-    "@types/jasmine": "2.5.38",
-    "@types/node": "^6.0.42",
+    "@types/body-parser": "0.0.33",
+    "@types/es6-shim": "^0.31.32",
+    "@types/express": "^4.0.33",
+    "@types/mongodb": "^2.1.41",
+    "@types/mongoose": "^4.7.8",
+    "@types/node": "^6.0.46",
     "babel-register": "^6.23.0",
     "codelyzer": "~2.0.0-beta.1",
     "concurrently": "^3.4.0",
