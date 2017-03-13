@@ -1,6 +1,6 @@
 'use strict';
 
-import mongoose from 'mongoose';
+import * as mongoose from 'mongoose';
 
 var ThingSchema = new mongoose.Schema({
   name: String,

@@ -1,7 +1,7 @@
 'use strict';
 
 import * as express from "express";
-var controller = require('./thing.controller');
+import * as controller from "./thing.controller";
 
 let router = express.Router();
 
