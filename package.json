@@ -1,6 +1,6 @@
 {
-  "name": "autodice",
-  "version": "0.0.0",
+  "name": "ng2-node-express-typescript",
+  "version": "0.1",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
@@ -13,7 +13,6 @@
     "server:start": "tsc && node dist/server",
     "server:debug": "nodemon dist/server --watch server -e ts --exec \"tsc && node dist/server\""
   },
-  "private": true,
   "dependencies": {
     "@angular/common": "^2.4.0",
     "@angular/compiler": "^2.4.0",
