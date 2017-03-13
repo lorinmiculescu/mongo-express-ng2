@@ -18,6 +18,7 @@ class App {
 		
 		this.express = express();
 		this.middleware();
+		this.routes();
 
 	}
 	
@@ -26,8 +27,12 @@ class App {
 		this.express.use(bodyParser.json());
 		this.express.use(bodyParser.urlencoded({ extended: false }));
 
-		this.express.use(express.static(path.join(__dirname, '../client')));
+		//this.express.use(express.static(path.join(__dirname, '../client')));
 		
+	}
+
+	private routes(): void {
+		routes(this.express);
 	}
 
 	
