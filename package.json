@@ -1,7 +1,11 @@
 {
   "name": "ng2-node-express-typescript",
-  "version": "0.1",
+  "version": "0.0.1",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lorinmiculescu/ng2-node-express-typescript"
+  },
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
@@ -57,7 +61,6 @@
     "karma-jasmine": "^1.0.2",
     "nodemon": "^1.11.0",
     "protractor": "~5.1.0",
-    "pug": "^2.0.0-beta11",
     "ts-node": "1.2.1",
     "tslint": "^4.3.0",
     "typescript": "~2.0.0"
