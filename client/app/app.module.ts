@@ -8,22 +8,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { FeaturesComponent } from './features/features.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { ThingsComponent } from './things/things.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'features', component: FeaturesComponent },
+  { path: 'things', component: ThingsComponent },
   { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    FeaturesComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    ThingsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

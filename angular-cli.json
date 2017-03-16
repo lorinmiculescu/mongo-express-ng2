@@ -8,9 +8,9 @@
       "root": "client",
       "outDir": "dist/client",
       "assets": [
-        "assets",
-        "favicon.ico"
-      ],
+  "assets",
+  "favicon.ico"
+],
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
@@ -25,8 +25,10 @@
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/tether/dist/js/tether.min.js",
+        "../node_modules/lodash/lodash.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js"
       ],
+      "environmentSource": "environments/environment.ts",
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
