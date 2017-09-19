@@ -24,7 +24,7 @@ let config = {
     seedDB: true,
 
     secrets: {
-        session: 'autodice-secret'
+        session: 'ng2-node-express-typescript-secret'
     },
 
     facebook: {
