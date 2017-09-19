@@ -13,7 +13,7 @@ let config = {
     ip: process.env.IP || '0.0.0.0',
 
     mongo: {
-        uri: 'mongodb://localhost/autodice',
+        uri: 'mongodb://localhost/example_db',
         options: {
             db: {
                 safe: false
